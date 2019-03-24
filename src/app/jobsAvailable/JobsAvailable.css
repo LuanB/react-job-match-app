@@ -1,0 +1,44 @@
+.JobSummary {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  padding: 10px;
+  grid-template-areas: 
+  "logo title"
+  "logo title"
+  "logo name"
+  "logo jobRateInDollars"
+  "logo shiftFirstLastDay"
+}
+
+
+.JobSummary__logo {
+  grid-area: logo;
+  justify-self: end;
+  padding-right: 10px;
+}
+
+.JobSummary__title {
+  grid-area: title;
+  justify-self: start;
+  font-weight: bold;
+  font-size: large;
+  text-align: left;
+  
+}
+
+.JobSummary__name {
+  grid-area: name;
+  justify-self: start;
+  text-transform: uppercase;
+}
+
+.JobSummary__jobRateInDollars {
+  grid-area: jobRateInDollars;
+  justify-self: start;
+}
+
+.JobSummary__shiftFirstLastDay {
+  grid-area: shiftFirstLastDay;
+  justify-self: start;
+}

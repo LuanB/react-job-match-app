@@ -1,7 +1,22 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
-const HomeComponent = () => {
-  <div>Home Component</div>;
+const HomeComponent = (props) => {
+  const handleJobSearchClick = (props) => {
+    props.history.push('/jobsavailable');
+  };
+
+  return (
+    <div>
+      <div>Home component</div>
+      <button
+        className="waves-effect waves-light btn blue"
+        onClick={() => handleJobSearchClick(props)}
+      >
+        Search Jobs
+      </button>
+    </div>
+  );
 };
 
-export default HomeComponent;
+export default withRouter(HomeComponent);
