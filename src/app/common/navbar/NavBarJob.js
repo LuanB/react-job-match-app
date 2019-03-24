@@ -6,7 +6,7 @@ const NavBarJob = () => {
     <nav className="nav-wrapper blue darken-2">
       <div className="container">
         <ul className="left">
-          <li>
+          <li className="active">
             <NavLink to="/">Jobs Available</NavLink>
           </li>
         </ul>

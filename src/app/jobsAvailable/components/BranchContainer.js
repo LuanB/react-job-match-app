@@ -3,10 +3,14 @@ import BranchComponent from './BranchComponent';
 
 export class BranchContainer extends Component {
   render() {
+    const { branch, branchPhoneNumber } = this.props;
+
     return (
-      <div>
-        <h1>BranchContainer</h1>
-        <BranchComponent />
+      <div className="Branch">
+        <BranchComponent
+          branch={branch}
+          branchPhoneNumber={branchPhoneNumber}
+        />
       </div>
     );
   }

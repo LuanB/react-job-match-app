@@ -1,8 +1,8 @@
 .JobSummary {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: auto 2fr;
   grid-template-rows: auto;
-  padding: 10px;
+  padding: 1rem;
   grid-template-areas: 
   "logo title"
   "logo title"
@@ -15,7 +15,7 @@
 .JobSummary__logo {
   grid-area: logo;
   justify-self: end;
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 .JobSummary__title {
@@ -41,4 +41,73 @@
 .JobSummary__shiftFirstLastDay {
   grid-area: shiftFirstLastDay;
   justify-self: start;
+}
+
+.JobShift {
+  padding: 1rem;
+}
+.JobShift__agreeAllDays {
+  text-align: left;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+.JobShiftComponent__shift {
+  text-align: left;
+}
+
+.Location {
+  padding: 1rem;
+}
+
+.Location__title {
+  text-align: left;
+  /* padding-bottom: 5px; */
+  font-weight: bold;
+}
+
+.Location__address {
+  text-align: left;
+  
+}
+
+.Location__link {
+  text-decoration: underline;
+}
+
+.Location__link:hover {
+  color:red;
+}
+
+
+
+.Branch {
+  padding: 1rem;
+}
+
+.Branch__title {
+  text-align: left;
+  /* padding-bottom: 5px; */
+  font-weight: bold;
+}
+
+.Branch__name {
+  text-align: left;
+}
+
+.Branch__phonelink {
+  text-align: left;
+  
+}
+
+ .Branch__phone {
+  text-decoration: underline;
+  text-align: left;
+}
+
+.Branch__phonelink:hover {
+  color:red;
+}
+
+.JobsAvailable__NoTakeJobButton {
+  padding: 1rem;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import { Form } from 'redux-form';
 import JobComponent from './JobComponent';
 import jobAPIData from './jobAPIData';
 import './JobsAvailable.css';
@@ -13,7 +14,6 @@ export class JobsAvailableContainer extends Component {
   render() {
     return (
       <div>
-        <h1>JobsAvaContainer</h1>
         <JobComponent jobsData={jobAPIData} />
       </div>
     );

@@ -4,19 +4,24 @@ import { NavLink, withRouter } from 'react-router-dom';
 
 const NavBar = (prps) => {
   return (
-    <nav className="nav-wrapper blue darken-3">
+    <nav className="nav-wrapper grey darken-4">
       <div className="container">
-        <div className="left">
-          <a href="/" className="brand-logo">
-            OnDemand Jobs App
-          </a>
-        </div>
+        <ul className="left">
+          <li>
+            <NavLink to="/">
+              <h5>OnDemand Jobs App</h5>
+            </NavLink>
+          </li>
+        </ul>
         <ul className="right">
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
             <NavLink to="/jobsavailable">JobsAvailable</NavLink>
+          </li>
+          <li>
+            <i className="large material-icons">menu</i>
           </li>
         </ul>
       </div>

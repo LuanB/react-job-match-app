@@ -23,7 +23,11 @@ const JobSummaryComponent = (props) => {
   return (
     <div className="JobSummary">
       <div className="JobSummary__logo">
-        <img className="responsive-img" src={logo} alt={name} />
+        <img
+          className="responsive-img hide-on-small-only"
+          src={logo}
+          alt={name}
+        />
       </div>
       <div className="JobSummary__title">{title} </div>
       <div className="JobSummary__name">{name}</div>
